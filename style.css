@@ -1007,3 +1007,110 @@ footer p {
     }
 
 }
+/* ========================================
+   TEŞEKKÜR SAYFASI
+======================================== */
+
+.thank-you {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 7%;
+
+    background:
+        radial-gradient(
+            circle at 70% 40%,
+            rgba(255, 107, 0, 0.12),
+            transparent 35%
+        ),
+        #111;
+}
+
+.thank-you-content {
+    max-width: 700px;
+
+    text-align: center;
+}
+
+.thank-you-label {
+    margin: 0 0 20px;
+
+    color: #ff6b00;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+.thank-you h1 {
+    margin: 0 0 25px;
+
+    font-size: clamp(50px, 7vw, 80px);
+
+    line-height: 1.05;
+
+    letter-spacing: -3px;
+}
+
+.thank-you h1 span {
+    display: block;
+
+    color: #ff6b00;
+}
+
+.thank-you-content > p:not(.thank-you-label) {
+    max-width: 600px;
+
+    margin: 0 auto 35px;
+
+    color: #999;
+
+    font-size: 17px;
+}
+
+.thank-you-button {
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    background: #ff6b00;
+
+    color: white;
+
+    border-radius: 4px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.thank-you-button:hover {
+    background: #e65f00;
+
+    transform: translateY(-2px);
+}
+
+
+/* MOBİL */
+
+@media (max-width: 600px) {
+
+    .thank-you {
+        padding: 30px 5%;
+    }
+
+    .thank-you h1 {
+        font-size: 46px;
+
+        letter-spacing: -2px;
+    }
+
+    .thank-you-content > p:not(.thank-you-label) {
+        font-size: 16px;
+    }
+
+}
