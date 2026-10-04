@@ -367,37 +367,208 @@
 
 
     <!-- CONTACT -->
-    <section class="contact" id="iletisim">
+<section class="contact" id="iletisim">
 
-        <p class="section-label">
-            İLETİŞİM
-        </p>
+    <p class="section-label">
+        İLETİŞİM
+    </p>
 
-        <h2>
-            İşletmeniz için bir web sitesi
-            <span>hazırlayalım.</span>
-        </h2>
+    <h2>
+        İşletmeniz için bir web sitesi
+        <span>hazırlayalım.</span>
+    </h2>
 
-        <p>
-            Projeniz hakkında konuşmak ve işletmenize uygun
-            bir web sitesi planlamak için bana ulaşabilirsiniz.
-        </p>
+    <p>
+        Projenizi kısaca anlatın, size uygun web sitesi
+        çözümünü birlikte planlayalım.
+    </p>
 
-        <div class="contact-buttons">
 
-            <a href="mailto:erystudio.web@gmail.com"
-               class="contact-button">
-                Teklif Al
-            </a>
+    <div class="contact-layout">
 
-            <a href="mailto:erystudio.web@gmail.com"
-               class="contact-email">
-                erystudio.web@gmail.com
+        <!-- TEKLİF FORMU -->
+        <div class="quote-form">
+
+            <form action="https://formsubmit.co/erystudio.web@gmail.com" method="POST">
+
+                <input type="hidden" name="_subject" value="ERY Studio - Yeni Teklif Talebi">
+
+                <input type="hidden" name="_captcha" value="false">
+
+                <input type="hidden" name="_template" value="table">
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Ad Soyad
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="Ad Soyad"
+                            placeholder="Adınız ve soyadınız"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="business">
+                            İşletme Adı
+                        </label>
+
+                        <input
+                            type="text"
+                            id="business"
+                            name="İşletme Adı"
+                            placeholder="İşletmenizin adı"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            E-posta
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="E-posta"
+                            placeholder="ornek@mail.com"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Telefon
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="Telefon"
+                            placeholder="Telefon numaranız">
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="service">
+                        İhtiyacınız
+                    </label>
+
+                    <select id="service" name="Hizmet">
+
+                        <option value="">
+                            Hizmet seçiniz
+                        </option>
+
+                        <option value="Yeni Web Sitesi">
+                            Yeni Web Sitesi
+                        </option>
+
+                        <option value="Web Sitesi Yenileme">
+                            Web Sitesi Yenileme
+                        </option>
+
+                        <option value="Landing Page">
+                            Landing Page
+                        </option>
+
+                        <option value="Diğer">
+                            Diğer
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Projeniz hakkında
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="Proje Detayı"
+                        rows="6"
+                        placeholder="İşletmenizden, istediğiniz web sitesinden veya projenizden kısaca bahsedebilirsiniz."
+                        required></textarea>
+
+                </div>
+
+
+                <button type="submit" class="quote-button">
+                    Teklif Talebi Gönder →
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <!-- DOĞRUDAN İLETİŞİM -->
+        <div class="direct-contact">
+
+            <p class="direct-label">
+                DOĞRUDAN ULAŞIN
+            </p>
+
+            <h3>
+                Projeniz hakkında
+                <span>konuşalım.</span>
+            </h3>
+
+            <p class="direct-text">
+                Formu doldurmak yerine doğrudan
+                e-posta üzerinden de ulaşabilirsiniz.
+            </p>
+
+
+            <div class="direct-item">
+
+                <span>E-POSTA</span>
+
+                <a href="mailto:erystudio.web@gmail.com">
+                    erystudio.web@gmail.com
+                </a>
+
+            </div>
+
+
+            <a
+                href="mailto:erystudio.web@gmail.com"
+                class="direct-button">
+
+                E-posta Gönder →
+
             </a>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
     <!-- FOOTER -->
