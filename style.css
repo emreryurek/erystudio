@@ -261,11 +261,13 @@ nav a:hover {
 
 .projects {
     padding: 120px 7%;
+
     background: #151515;
 }
 
 .section-title {
     max-width: 700px;
+
     margin-bottom: 60px;
 }
 
@@ -301,7 +303,7 @@ nav a:hover {
 }
 
 
-/* CARD */
+/* PROJECT CARD */
 
 .project-card {
     overflow: hidden;
@@ -324,6 +326,7 @@ nav a:hover {
 
 .project-image {
     width: 100%;
+
     overflow: hidden;
 
     background: #222;
@@ -485,8 +488,6 @@ nav a:hover {
 .contact {
     padding: 120px 7%;
 
-    text-align: center;
-
     background: #111;
 }
 
@@ -494,6 +495,8 @@ nav a:hover {
     max-width: 800px;
 
     margin: 0 auto 20px;
+
+    text-align: center;
 
     font-size: 52px;
     line-height: 1.1;
@@ -509,28 +512,246 @@ nav a:hover {
     margin: 0 auto 35px;
 
     color: #999;
+
+    text-align: center;
 }
 
-.contact-buttons {
-    display: flex;
 
-    justify-content: center;
-    align-items: center;
+/* CONTACT LAYOUT */
+
+.contact-layout {
+    max-width: 1050px;
+
+    margin: 50px auto 0;
+
+    display: grid;
+
+    grid-template-columns: minmax(0, 760px) minmax(240px, 1fr);
+
+    gap: 30px;
+
+    align-items: stretch;
+}
+
+
+/* ========================================
+   TEKLİF FORMU
+======================================== */
+
+.quote-form {
+    padding: 35px;
+
+    background: #171717;
+
+    border: 1px solid #292929;
+
+    text-align: left;
+}
+
+.quote-form form {
+    width: 100%;
+}
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
 
     gap: 20px;
-
-    flex-wrap: wrap;
 }
 
-.contact-email {
-    color: #888;
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+
+    color: #ddd;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding: 14px 15px;
+
+    background: #111;
+
+    color: white;
+
+    border: 1px solid #333;
+
+    border-radius: 3px;
+
+    font-family: Arial, sans-serif;
 
     font-size: 14px;
+
+    outline: none;
 
     transition: 0.3s;
 }
 
-.contact-email:hover {
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #666;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #ff6b00;
+}
+
+.form-group textarea {
+    resize: vertical;
+
+    min-height: 140px;
+}
+
+.form-group select {
+    cursor: pointer;
+}
+
+.quote-button {
+    width: 100%;
+
+    padding: 15px 25px;
+
+    background: #ff6b00;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 4px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.quote-button:hover {
+    background: #e65f00;
+
+    transform: translateY(-2px);
+}
+
+
+/* ========================================
+   DOĞRUDAN İLETİŞİM
+======================================== */
+
+.direct-contact {
+    padding: 35px 30px;
+
+    background: #171717;
+
+    border: 1px solid #292929;
+
+    text-align: left;
+}
+
+.direct-label {
+    margin: 0 0 25px;
+
+    color: #ff6b00;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.direct-contact h3 {
+    margin: 0 0 15px;
+
+    font-size: 27px;
+
+    line-height: 1.2;
+}
+
+.direct-contact h3 span {
+    color: #ff6b00;
+}
+
+.direct-text {
+    margin: 0 0 35px;
+
+    color: #888;
+
+    font-size: 14px;
+}
+
+.direct-item {
+    margin-bottom: 30px;
+}
+
+.direct-item span {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #666;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.direct-item a {
+    color: #ddd;
+
+    font-size: 14px;
+
+    word-break: break-word;
+
+    transition: 0.3s;
+}
+
+.direct-item a:hover {
+    color: #ff6b00;
+}
+
+.direct-button {
+    display: inline-block;
+
+    padding: 12px 18px;
+
+    border: 1px solid #444;
+
+    border-radius: 4px;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.direct-button:hover {
+    border-color: #ff6b00;
+
     color: #ff6b00;
 }
 
@@ -543,6 +764,7 @@ footer {
     display: flex;
 
     justify-content: space-between;
+
     align-items: center;
 
     padding: 30px 7%;
@@ -586,10 +808,18 @@ footer p {
 
 
 /* ========================================
-   MOBİL
+   TABLET
 ======================================== */
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .direct-contact {
+        width: 100%;
+    }
 
     .service-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -606,12 +836,11 @@ footer p {
     .why-grid {
         grid-template-columns: 1fr;
     }
-
 }
 
 
 /* ========================================
-   TABLET / MOBİL
+   MOBİL
 ======================================== */
 
 @media (max-width: 800px) {
@@ -640,7 +869,6 @@ footer p {
 
         letter-spacing: -2px;
     }
-
 
     .hero-text {
         font-size: 17px;
@@ -679,7 +907,6 @@ footer p {
 
         text-align: center;
     }
-
 }
 
 
@@ -720,16 +947,15 @@ footer p {
     }
 
     .hero-button {
-        text-align: center;
-
         width: 100%;
+
+        text-align: center;
     }
 
 
     .service-grid {
         grid-template-columns: 1fr;
     }
-
 
     .service-card {
         min-height: auto;
@@ -747,6 +973,28 @@ footer p {
     }
 
 
+    .contact-layout {
+        margin-top: 35px;
+    }
+
+
+    .quote-form {
+        padding: 25px 20px;
+    }
+
+
+    .form-row {
+        grid-template-columns: 1fr;
+
+        gap: 0;
+    }
+
+
+    .direct-contact {
+        padding: 30px 25px;
+    }
+
+
     .contact-buttons {
         flex-direction: column;
     }
@@ -754,6 +1002,7 @@ footer p {
 
     .contact-button {
         width: 100%;
+
         max-width: 280px;
     }
 
