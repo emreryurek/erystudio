@@ -140,6 +140,16 @@ nav a:hover {
     font-size: 18px;
 }
 
+
+/* HERO BUTTONS */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .hero-button,
 .contact-button {
     display: inline-block;
@@ -160,6 +170,88 @@ nav a:hover {
 .contact-button:hover {
     background: #e65f00;
     transform: translateY(-2px);
+}
+
+
+/* SECONDARY BUTTON */
+
+.hero-button.secondary {
+    background: transparent;
+
+    border: 1px solid #444;
+
+    color: white;
+}
+
+.hero-button.secondary:hover {
+    background: #1d1d1d;
+
+    border-color: #ff6b00;
+
+    color: #ff6b00;
+}
+
+
+/* ========================================
+   SERVICES
+======================================== */
+
+.services {
+    padding: 120px 7%;
+
+    background: #111;
+}
+
+.service-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.service-card {
+    min-height: 260px;
+
+    padding: 30px;
+
+    background: #171717;
+
+    border: 1px solid #292929;
+
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #ff6b00;
+}
+
+.service-number {
+    display: block;
+
+    margin-bottom: 35px;
+
+    color: #ff6b00;
+
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.service-card h3 {
+    margin: 0 0 15px;
+
+    font-size: 22px;
+}
+
+.service-card p {
+    margin: 0;
+
+    color: #999;
+
+    font-size: 15px;
 }
 
 
@@ -223,6 +315,7 @@ nav a:hover {
 
 .project-card:hover {
     transform: translateY(-7px);
+
     border-color: #ff6b00;
 }
 
@@ -232,11 +325,13 @@ nav a:hover {
 .project-image {
     width: 100%;
     overflow: hidden;
+
     background: #222;
 }
 
 .project-image img {
     display: block;
+
     width: 100%;
     height: auto;
 }
@@ -268,6 +363,7 @@ nav a:hover {
     margin-bottom: 25px;
 
     color: #999;
+
     font-size: 15px;
 }
 
@@ -284,12 +380,74 @@ nav a:hover {
 
 
 /* ========================================
+   WHY ERY STUDIO
+======================================== */
+
+.why-us {
+    padding: 120px 7%;
+
+    background: #111;
+}
+
+.why-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.why-card {
+    padding: 35px;
+
+    background: #171717;
+
+    border: 1px solid #292929;
+
+    transition: 0.3s;
+}
+
+.why-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #ff6b00;
+}
+
+.why-number {
+    display: block;
+
+    margin-bottom: 30px;
+
+    color: #ff6b00;
+
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.why-card h3 {
+    margin: 0 0 15px;
+
+    font-size: 24px;
+}
+
+.why-card p {
+    margin: 0;
+
+    color: #999;
+
+    font-size: 15px;
+}
+
+
+/* ========================================
    ABOUT
 ======================================== */
 
 .about {
     padding: 120px 7%;
-    background: #111;
+
+    background: #151515;
 }
 
 .about-content {
@@ -307,12 +465,16 @@ nav a:hover {
     color: #ff6b00;
 }
 
-.about p:last-child {
+.about p {
     max-width: 700px;
 
     color: #999;
 
     font-size: 18px;
+}
+
+.about p:last-child {
+    margin-top: 20px;
 }
 
 
@@ -325,7 +487,7 @@ nav a:hover {
 
     text-align: center;
 
-    background: #151515;
+    background: #111;
 }
 
 .contact h2 {
@@ -342,9 +504,34 @@ nav a:hover {
 }
 
 .contact > p:not(.section-label) {
-    margin-bottom: 35px;
+    max-width: 650px;
+
+    margin: 0 auto 35px;
 
     color: #999;
+}
+
+.contact-buttons {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.contact-email {
+    color: #888;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.contact-email:hover {
+    color: #ff6b00;
 }
 
 
@@ -354,6 +541,7 @@ nav a:hover {
 
 footer {
     display: flex;
+
     justify-content: space-between;
     align-items: center;
 
@@ -366,12 +554,15 @@ footer {
 
 .footer-logo {
     display: flex;
+
     align-items: center;
+
     gap: 8px;
 }
 
 .footer-logo strong {
     font-size: 20px;
+
     letter-spacing: 2px;
 }
 
@@ -379,6 +570,7 @@ footer {
     color: #ff6b00;
 
     font-size: 9px;
+
     font-weight: bold;
 
     letter-spacing: 2px;
@@ -395,6 +587,31 @@ footer p {
 
 /* ========================================
    MOBİL
+======================================== */
+
+@media (max-width: 1000px) {
+
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        max-width: 700px;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* ========================================
+   TABLET / MOBİL
 ======================================== */
 
 @media (max-width: 800px) {
@@ -420,12 +637,20 @@ footer p {
 
     .hero h1 {
         font-size: 52px;
+
         letter-spacing: -2px;
     }
 
 
+    .hero-text {
+        font-size: 17px;
+    }
+
+
+    .services,
     .projects,
     .about,
+    .why-us,
     .contact {
         padding: 80px 5%;
     }
@@ -436,13 +661,8 @@ footer p {
     }
 
 
-    .project-grid {
-        grid-template-columns: 1fr;
-    }
-
-
     .project-image {
-        height: 230px;
+        height: auto;
     }
 
 
@@ -454,22 +674,34 @@ footer p {
 
     footer {
         flex-direction: column;
+
         gap: 15px;
 
         text-align: center;
     }
+
 }
 
 
-@media (max-width: 500px) {
+/* ========================================
+   TELEFON
+======================================== */
+
+@media (max-width: 600px) {
 
     header {
         flex-direction: column;
+
         gap: 15px;
     }
 
     nav {
         gap: 18px;
+    }
+
+
+    .hero {
+        min-height: 560px;
     }
 
     .hero h1 {
@@ -480,12 +712,49 @@ footer p {
         font-size: 16px;
     }
 
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .hero-button {
+        text-align: center;
+
+        width: 100%;
+    }
+
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .service-card {
+        min-height: auto;
+    }
+
+
     .section-title h2 {
         font-size: 34px;
     }
+
 
     .about h2,
     .contact h2 {
         font-size: 34px;
     }
+
+
+    .contact-buttons {
+        flex-direction: column;
+    }
+
+
+    .contact-button {
+        width: 100%;
+        max-width: 280px;
+    }
+
 }
